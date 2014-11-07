@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta content="Independent Software Services" name="description">
+        <meta content="Entrepreneurship,Innovation,Services,Software" name="keywords">
+        <meta content="Independent Software" name="author">
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+        
+        <!-- If you want to ENSURE your full title tag shows in Google SERPS, stick to about 65 characters -->
+        <title>Independent Software | WE HELP ENTREPRENEURS WIN</title>
+        
+        <link href="css/reset.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="favicon.ico" rel="shortcut icon">
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400' rel='stylesheet' type='text/css'>
+        
+        <script src="script/jquery.min.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-46298786-2', 'auto');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+
+        </script>
+        
+        <script>
+        $(document).ready(function()
+        {
+            var height_diff = $(window).height() - $('body').height();
+            
+            if( height_diff > 0 )
+            {
+                $('#footer').css( 'margin-top', height_diff );
+            }
+        });
+        </script>
+        
+        <script>
+            $(document).ready(function()
+            {
+                $('#slide3').hide();
+                $('#slide2').hide();
+                document.getElementById('link1').style.color="#424142";
+                
+                $('#link1').click(function()
+                { 
+                    $('#slide2').hide();
+                    $('#slide3').hide();
+                    $('#slide1').show();
+                    
+                    document.getElementById('link1').style.color="#424142";
+                    document.getElementById('link2').style.color="#cccccc";
+                    document.getElementById('link3').style.color="#cccccc";
+                });
+                
+                $('#link2').click(function()
+                { 
+                    $('#slide3').hide();
+                    $('#slide1').hide();
+                    $('#slide2').show();
+                    
+                    document.getElementById('link1').style.color="#cccccc";
+                    document.getElementById('link2').style.color="#424142";
+                    document.getElementById('link3').style.color="#cccccc";
+                  
+                }); 
+                
+                $('#link3').click(function()
+                { 
+                    $('#slide1').hide();
+                    $('#slide2').hide();
+                    $('#slide3').show();
+                    
+                    document.getElementById('link1').style.color="#cccccc";
+                    document.getElementById('link2').style.color="#cccccc";
+                    document.getElementById('link3').style.color="#424142";
+                  
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="nav" class="center">
+                <img class="indieBadge" src="img/img-indie-badge.png"/>
+                <p class="navigation"><a class="nav_links" href="#products">PRODUCTS</a></p>
+                <p class="navigation"><a class="nav_links" href="#clients">CLIENTS</a></p>
+                <p class="navigation"><a class="nav_links" href="#community">COMMUNITY</a></p>
+                <p class="navigation"><a class="nav_links" href="#press">PRESS</a></p>
+                <p class="navigation"><a class="nav_links" href="#workWithUs">WORK WITH US</a></p>
+                <a href="https://www.facebook.com/pages/Independent-Software/646683215349709?skip_nax_wizard=true#"><img class="facebook" src="img/transparent.png"/></a>
+                <a href="https://twitter.com/freeyourdata"><img class="twitter" src="img/transparent.png"/></a>
+            </div>
+            
+            <div id="mobile_nav">
+                <p class="icon"><img class="indieBadge" src="img/img-indie-badge.png"/></p>
+                <br>
+                
+                <p class="navigation">
+                    <a class="nav_links" href="#our_products">PRODUCTS</a>
+                    <a class="nav_links" href="#ourClients">CLIENTS</a>
+                    <a class="nav_links" href="#community-building">COMMUNITY</a>
+                </p>
+                
+                <p class="navigation">
+                    <a class="nav_links" href="#press">PRESS</a>
+                    <a class="nav_links" href="#workWithUs">WORK WITH US</a>
+                </p>
+                
+                <p class="socialMedia">
+                    <a href="https://www.facebook.com/pages/Independent-Software/646683215349709?skip_nax_wizard=true#"><img class="facebook" src="img/transparent.png"/></a>
+                    <a href="https://twitter.com/freeyourdata"><img class="twitter" src="img/transparent.png"/></a>
+                </p>
+            </div>
+            
+            <br clear="left"/>
+            
+            <div id="big_green">
+                <h1 id="title_white">AT INDEPENDENT SOFTWARE<BR>WE HELP ENTREPRENEURS WIN</h1>
+            </div>
+            
+            <div class="center" id="bar_blk"></div>
+            
+            <div class="center-arrow" id="diamond_blk"></div>
+            
+            <div class="center_images">
+                <div id="col_holder">
+                    <div id="products">
+                        <p class="title_blk">Product Development</p>
+                        <p class="body_blk">At Independent Software, we work with you to turn your product idea into a reality.</p>
+                    </div>
+                    
+                    <div id="col_1" >
+                        <img class="padding_left" src="img/img-prd-001.png"  /> 
+                        <p class="img_title">Web Applications</p> 
+                        <span class="img_body">
+                            We design and develop web applications customized to your needs, including both front-end and back-end architecture, meeting the highest industry standards of responsiveness and functionality.
+                        </span>
+                    </div>
+                    
+                    <div id="col_2" >
+                        <img class="padding_left" src="img/img-prd-002.png" /> 
+                        <p class="img_title">Mobile Applications</p> 
+                        <span class="img_body">Our team will work with you to develop customized native iOS apps, bringing you through the approval process and into the App Store.</span>
+                    </div>
+                    
+                    <div id="col_3" >
+                        <img class="padding_left" src="img/product_design.png" />
+                        <p class="img_title">Product Design</p> 
+                        <span class="img_body">Led by our in-house Art Director, our team will work with you to create optimal user interfaces and branding for your company and its products.</span>
+                    </div>
+                </div>  
+            </div>
+                
+            <br clear="left"/>
+            
+            <div id="mobile_services">
+                <div id="our_products">
+                    <p class="title_blk">Product Development</p>
+                    <p class="body_blk">At Independent Software, we work with you to turn your product idea into a reality.</p>
+                </div>
+                
+                <div>
+                    <p>
+                        <img class="mobile_services_images" src="img/img-prd-001.png">
+                    </p>
+                    <p class="img_title">Web Applications</p>
+                    <p class="img_body">We design and develop web applications customized to your needs, including both front-end and back-end architecture, meeting the highest industry standards of responsiveness and functionality.</p>
+                </div>
+                
+                <div>
+                    <p>
+                        <img class="mobile_services_images" src="img/img-prd-002.png">
+                    </p>
+                    <p class="img_title">Mobile Applications</p>
+                    <p class="img_body">Our team will work with you to develop customized native iOS apps, bringing you through the approval process and into the App Store.</p>
+                </div>
+                
+                <div>
+                    <p>
+                        <img class="mobile_services_images" src="img/product_design.png">
+                    </p>
+                    <p class="img_title">Product Design</p>
+                    <p class="img_body">Led by our in-house Art Director, our team will work with you to create optimal user interfaces and branding for your company and its products.</p>
+                </div>
+            </div>
+            
+            <br clear="left"/><br><br>
+            
+            <div class="center" id="bar_green"></div>
+    
+            <div class="center-arrow" id="diamond_green"></div>
+            
+            <div  class="center_imagesClients">
+                <div id="clients">
+                    <p class="title_blk">Our Clients</p>
+                </div>
+                
+                <div id="col_1">
+                    <p class="caseStudyTitle"><a id="link1">Intelliblast Health</a></p>
+                </div>
+                
+                <div id="col_2">
+                    <p class="caseStudyTitle"><a id="link2">CT Barns</a></p>
+                </div>
+                
+                <div id="col_3">
+                    <p class="caseStudyTitle"><a id="link3">in3 Consulting</a></p>
+                </div>
+                
+                <br clear="left"/>
+                
+                <div id="bar_arrow"> </div>  
+            </div>
+            
+            <div class="center_images">
+                <!-- SLIDE 1 -->
+                <div id="slide1" class="slide">
+                    <div id="caseStudyText"><img class="clientLogos" src="img/intelliblast_logo_cs.jpg"/>
+                    <p class="caseStudyText">Matthew Browning, entrepreneur and nurse practitioner, saw a problem in hospital care. In spite of hospitals’ constant need for nurses, there was no communications technology that filled shift vacancies quickly and efficiently. Matt collaborated with Independent Software to create Intelliblast, an innovative web application that revolutionizes hospital-to-nurse communication. His startup, Intelliblast Health, won a patent, secured significant outside investment, and continues to develop its product with Independent Software.</p>
+                    <p class="seeMore caseStudyText">
+                    <br>
+                    <a href="files/caseStudy-Intelliblast.pdf" target="_blank">Learn more about our collaboration with Intelliblast Health.</a></p></div>
+    
+                    <img src="img/intelliblast.png" alt="Slide 1" class="caseStudyImage" />
+                </div>
+                
+                <!-- SLIDE 2 -->
+                <div id="slide2" class="slide">
+                    <div id="caseStudyText">
+                        <img class="clientLogos" src="img/ctbarns_logo_cs.jpg"/>
+                    
+                        <p class="caseStudyText">Connecticut’s network of antique barns is a precious, little-known 
+                        piece of its cultural heritage, which the Connecticut Trust for Historic Preservation wanted to reveal to a wider public. Envisioning an interactive mobile app that would lead users on tours, the Trust needed the technical team to build it. So it turned to Independent Software. The resulting CT Barns iPhone app includes GPS maps linked to curated photo galleries and historical/tourist information, allowing users to discover, both virtually and physically, one of Connecticut’s hidden treasures.</p>
+                        <p class="seeMore caseStudyText">
+                            <br>
+                            <a href="files/caseStudy-ctbarns.pdf" target="_blank">Learn more about our collaboration with the Trust.</a>
+                        </p>
+                    </div>
+                    
+                    <img src="img/ctbarns-app.jpg" alt="Slide 2" class="caseStudyImage" />
+                </div>
+                
+                <!-- SLIDE 3 -->
+                <div id="slide3" class="slide">
+                    <div id="caseStudyText">
+                        <img class="clientLogos" src="img/in3_logo_cs.jpg"/>
+                        <p class="caseStudyText">Don Jastrebski is an expert in the role culture plays in organizational 
+                        success. He founded in3 Consulting to help companies build and manage teams using a unique evaluation model called FIT. As the consultancy grew, Don wanted to productize FIT, enhancing its effectiveness and allowing his company to scale up. With the Independent Software team, he created an innovative web application (called inSIGHT) that did just that, transforming in3 from a consultancy to a SaaS provider with a growing clientele.
+                        </p> 
+                        <br>
+                        <p class="seeMore caseStudyText"><a href="files/caseStudy-in3.pdf" target="_blank">Learn more about our collaboration with in3 Consulting.</a></p></div>
+                    <img src="img/in3-culturechart2.jpg" alt="Slide 3" class="caseStudyImage" />
+                </div>
+            </div>
+            
+            <br clear="left"/>
+            
+            <div id="mobile_services">
+                <div id="ourClients">
+                    <p class="title_blk">Our Clients</p>
+                </div>
+                
+                <div>
+                    <p>
+                        <img class="clientMobileLogos" src="img/intelliblast_logo_cs.jpg"/>
+                    </p>
+                    
+                    <p class="img_body">
+                        Matthew Browning, entrepreneur and nurse practitioner, saw a problem in hospital care. In spite of hospitals’ constant need for nurses, there was no communications technology that filled shift vacancies quickly and efficiently. Matt collaborated with Independent Software to create Intelliblast, an innovative web application that revolutionizes hospital-to-nurse communication. His startup, Intelliblast Health, won a patent, secured significant outside investment, and continues to develop its product with Independent Software.
+                    </p>
+                    
+                    <p class="seeMore caseStudyText">
+                        <a href="files/caseStudy-Intelliblast.pdf" target="_blank">Learn More about our collaboration with Intelliblast Health.</a>
+                    </p>
+                </div>
+                
+                <div>
+                    <p><img class="clientMobileLogos" src="img/ctbarns_logo_cs.jpg"/></p> 
+                    
+                    <p class="img_body">Connecticut’s network of antique barns is a precious, little-known piece of its cultural heritage, which the Connecticut Trust for Historic Preservation wanted to reveal to a wider public. Envisioning an interactive mobile app that would lead users on tours, the Trust needed the technical team to build it. So it turned to Independent Software. The resulting  CT Barns iPhone app includes GPS maps linked to curated photo galleries and historical/tourist information, allowing users to discover, both virtually and physically, one of Connecticut’s hidden treasures.</p>
+                    <p class="seeMore caseStudyText">
+                        <a href="files/caseStudy-ctbarns.pdf" target="_blank">Learn more about our collaboration with CTBarns.</a>
+                    </p>
+                </div>
+                
+                <div>
+                    <p><img class="clientMobileLogos" src="img/in3_logo_cs.jpg"/></p>
+                    
+                    <p class="img_body">Don Jastrebski is an expert in the role culture plays in organizational success. He founded in3 Consulting to help companies build and manage teams using a unique evaluation model called FIT. As the consultancy grew, Don wanted to productize FIT, enhancing its effectiveness and allowing his company to scale up. With the Independent Software team, he created an innovative web application (called inSIGHT) that did just that, transforming in3 from a consultancy to a SaaS provider with a growing clientele.</p>
+                    <p class="seeMore caseStudyText"><a href="files/caseStudy-in3.pdf" target="_blank">Learn More about our collaboration with in3 Consulting.</a></p>
+                </div>
+            </div>
+            
+            <br clear="left"/><br><br>
+            <div class="center" id="bar_grey"></div>
+            
+            <div class="center-arrow" id="diamond_grey"></div>
+            
+            <div class="center_images">
+                <div id="col_holder">
+                    <div id="community">
+                        <p class="title_blk">Community-Building</p>
+                        <p class="body_blk">In partnership with the State of Connecticut,<br>Independent Software runs a range of initiatives to strengthen our startup ecosystem.</p>
+                    </div>
+                    
+                    <div id="col_1" >
+                       <p> 
+                            <a target="_blank" href="http://indie-soft.com/a100">
+                            <img class="padding_left" src="img/a100_on.png"/></a> 
+                        </p>
+                        <p class="img_title">A100</p> 
+                        <span class="img_body"> Through our A100 Program, we match aspiring software developers with the technical training they need to become "startup-ready." Looking to hire technical talent? A100 is the program for you!</span>
+                    </div>
+                    
+                    <div id="col_2" >
+                        <p>
+                            <a target="_blank" href="http://thewhiteboardct.com/">
+                            <img class="padding_left" src="img/w_whiteboard.png"/></a>
+                        </p> 
+                        <p class="img_title">The Whiteboard</p> 
+                        <span class="img_body">Created and run by Independent Software, The Whiteboard is an online community building platform for Connecticut startup ecosystem. By sharing exciting stories of local entrepreneurs, covering news and important events, and providing issue-focused articles, The Whiteboard supports the wins of Connecticut startups and advances entrepreneurship in our State.</span>
+                    </div>
+                    
+                    <div id="col_3" >
+                        <p>
+                            <a target="_blank" href="http://thewhiteboardct.com/roadshow">
+                                <img class="padding_left" src="img/r_roadshow.png" />
+                            </a>
+                        </p>
+                        
+                        <p class="img_title">2014 Startup Roadshow</p> 
+                        <span class="img_body">The Startup Roadshow is 9-month long initiative of The Whiteboard to celebrate and explore Connecticut's diverse startup communities. Virtually, through The Whiteboard, we bring our readers into a different region of Connecticut each month, profiling top and up-and-coming entrepreneurs and revealing the uniqueness of the place. At the end of each month, we host an event that supports the local entrepreneurs and brings the community together.</span>
+                    </div>
+                </div>  
+            </div>  
+        </div>
+        
+        <br clear="left"/>
+    
+        <div id="mobile_services">
+            <div id="community-building">
+                <p class="title_blk">Community-Building</p>
+                <p class="body_blk">In partnership with the State of Connecticut,<br>Independent Software runs a range of initiatives to strengthen our startup ecosystem.</p>
+            </div>
+            
+            <div>
+                <p><a href="http://indie-soft.com/a100"><img src="img/a100_on.png"></a></p>
+                <p class="img_title">A100</p>
+                <p class="img_body"> Through our A100 Program, we match aspiring software developers with the technical training they need to become "startup-ready." Looking to hire technical talent? A100 is the program for you!</p>
+            </div>
+            
+            <div>
+                <p><a href="http://newhiteboard.com/"><img src="img/w_whiteboard.png"></a></p>
+                <p class="img_title">The Whiteboard</p>
+                <p class="img_body">Created and run by Independent Software, The Whiteboard is an online community building platform for Connecticut startup ecosystem. By sharing exciting stories of local entrepreneurs, covering news and important events, and providing issue-focused articles, The Whiteboard supports the wins of Connecticut startups and advances entrepreneurship in our State.</p>
+            </div>
+            
+            <div>
+                <p><a href="http://thewhiteboardct.com/roadshow"><img src="img/r_roadshow.png"></a></p>
+                <p class="img_title">2014 Startup Roadshow</p>
+                <p class="img_body">The Startup Roadshow is 9-month long initiative of The Whiteboard to celebrate and explore Connecticut's diverse startup communities. Virtually, through The Whiteboard, we bring our readers into a different region of Connecticut each month, profiling top and up-and-coming entrepreneurs and revealing the uniqueness of the place. At the end of each month, we host an event that supports the local entrepreneurs and brings the community together.</p>
+            </div>
+        </div>
+        
+        <br clear="left"/><br><br>
+        
+        <div id="press">
+            <div class="center" id="bar_blk"></div>
+            <div class="center-arrow" id="diamond_blk"></div>
+            
+            <div class="center_images">
+                <div id="col_holder">
+                    <div id="press">
+                        <p class="title_blk">Press</p>
+                    </div>
+                    
+                    <div id="col_1" >
+                        <p class="img_titlePress">
+                            <a href="http://www.theday.com/article/20140905/BIZ02/309059919/1018" target="_blank">
+                                Interest in sci-tech startup business is strong
+                            </a>
+                        </p>
+
+                        <p class="img_body">
+                            The New London Day features The Whiteboard Startup Roadshow
+                            <br>
+                            -- September 05, 2014
+                        </p>
+
+                        <br>
+                        
+                        <p class="img_titlePress">
+                            <a href="http://www.fastcompany.com/1835365/move-over-yale-new-havens-tech-scene-league-its-own" target="_blank">New Haven's Tech Scene Is in a League of Its Own</a>
+                        </p>
+                        
+                        <p class="img_body">
+                            Fast Company takes a tour of the New Haven innovation ecosystem.<br>
+                            Fast Company – April 25, 2012
+                        </p>
+                        
+                        <br>
+                        
+                        <p class="img_titlePress">
+                            <a href="http://www.nhregister.com/business/20131104/5m-to-help-create-connecticuts-innovation-ecosystem" target="_blank">$5M to Help Create Connecticut's “Innovation Ecosystem”</a>
+                        </p>
+                        
+                        <p class="img_body">
+                            Independent Software was one of 20 companies/organizations awarded grants by the State of Connecticut in 2013 to help grow the entrepreneurial ecosystem.<br>
+                            New Haven Register - November 4, 2013
+                        </p>
+                        
+                        <br>
+                    </div>
+                    
+                    <div id="col_2">
+                        <p class="img_titlePress">
+                            <a href="http://wnpr.org/post/startups-connecticut-develop-software-talent-pipeline" target="_blank">Startups in Connecticut Develop Software Talent Pipeline</a>
+                        </p>
+                        
+                        <p class="img_body">
+                            NPR interview on our A100 program. <br>
+                            WNPR – October 7, 2013
+                        </p>
+                        
+                        <br>
+                        
+                        <p class="img_titlePress">
+                            <a href="http://www.ctmirror.org/story/2013/09/10/second-year-ctnext-measures-achievements-and-raises-questions" target="_blank">Second Year for CTNext Measures Achievements and Raises Questions</a>
+                        </p>
+                        
+                        <p class="img_body">
+                            Derek Koch, Independent Software's CEO, discusses the challenges of building our entrepreneurial ecosystem. <br>
+                            The CT Mirror – September 11, 2013
+                        </p>
+                        
+                        <br>
+                        
+                        <p class="img_titlePress">
+                            <a href="http://www.createmagazines.com/showMagazine.php?mag_id=n6WroqehmWRiYoWYoqeEnKWcoJqmqqGnmpykp5eYoA==" target="_blank">Leading on the Leading Edge</a>
+                        </p>
+                        
+                        <p class="img_body">
+                            Derek Koch, Independent Software's CEO, was chosen as one of Greater New Haven's Rising Stars in 2013.<br>
+                            Business New Haven – September 2013
+                        </p>
+                        
+                        <br>
+                    </div>
+                    
+                    <div id="col_3" >
+                        <p class="img_titlePress"><a href="http://www.prnewswire.com/news-releases/alliance-healthcare-fund-announces-investment-in-targeted-instant-communications-211008031.html" target="_blank">Alliance Healthcare Fund Announces Investment in Targeted Instant Communications</a></p>
+                        <p class="img_body">Our client, Targeted Instant Communications, Inc. (TIC), successfully raised funding for the patent-pending IntelliBlast® communications system we developed.<br>PR Newswire – June 11, 2013</p>
+                        
+                        <br>
+                        
+                        <p class="img_titlePress">
+                            <a href="http://news.hamlethub.com/danbury/archive/36786-connecticut-created-first-barns-trail-in-the-nation" target="_blank">Connecticut Creates First Barns Trail in the Nation</a>
+                        </p>
+                        
+                        <p class="img_body">
+                            We developed the CT Barns iPhone app to accompany the launch of the Connecticut Barns trail.<br>
+                            Danbury's Hamlet Hub – June 30, 2013
+                        </p>
+                        <br>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
+        <br clear="left"/>
+        
+        <div id="mobile_services">
+            <div id="ourPress">
+                <p class="title_blk">Press</p>
+            </div>
+            
+            <br><br>
+            
+            <p class="img_titlePress">
+                <a href="http://www.indie-soft.com/files/PressReleaseRoadshowinNewHaven.pdf" target="_blank">
+                    The Whiteboard Startup Roadshow Showcases New Haven Entrepreneurs, Following Arts & Ideas Walking Tour of Ninth Square
+                </a>
+            </p>
+            
+            <p class="img_body">
+                Launched and supported by Independent Software and CT Next, The Whiteboard "Startup Roadshow" is currently
+                highlighting New Haven on the nine-month long celebration and exploration of Connecticut's startup communities,
+                wrapping up with
+                <a href="http://www.eventbrite.com/e/realizing-impossible-ideas-with-new-haven-entrepreneurs-hosted-by-the-whiteboard-tickets-11921450379" target="_blank">
+                    "Realizing Impossible Ideas with New Haven Entrepreneurs,"
+                </a>
+                an event on 6/26, from 2-5pm at Luck & Levity Brewshop.
+                <br>
+                - June 18, 2014
+            </p>
+            
+            <br>
+            
+            <p class="img_titlePress">
+                <a href="http://www.fastcompany.com/1835365/move-over-yale-new-havens-tech-scene-league-its-own" target="_blank">New Haven's Tech Scene Is in a League of Its Own</a>
+            </p>
+            
+            <p class="img_body">
+                Fast Company takes a tour of the New Haven innovation ecosystem.<br>
+                Fast Company – April 25, 2012
+            </p>
+            
+            <br>
+            
+            <p class="img_titlePress">
+                <a href="http://www.nhregister.com/business/20131104/5m-to-help-create-connecticuts-innovation-ecosystem" target="_blank">$5M to Help Create Connecticut's “Innovation Ecosystem”</a>
+            </p>
+            
+            <p class="img_body">
+                Independent Software was one of 20 companies/organizations awarded grants by the State of Connecticut in 2013 to help grow the entrepreneurial ecosystem.<br>
+                New Haven Register - November 4, 2013
+            </p>
+            
+            <br>
+            
+            <p class="img_titlePress">
+                <a href="http://wnpr.org/post/startups-connecticut-develop-software-talent-pipeline" target="_blank">Startups in Connecticut Develop Software Talent Pipeline</a>
+            </p>
+            
+            <p class="img_body">
+                NPR interview on our A100 program. <br>
+                WNPR – October 7, 2013
+            </p>
+            
+            <br>
+            
+            <p class="img_titlePress">
+                <a href="http://www.ctmirror.org/story/2013/09/10/second-year-ctnext-measures-achievements-and-raises-questions" target="_blank">Second Year for CTNext Measures Achievements and Raises Questions</a>
+            </p>
+            
+            <p class="img_body">
+                Derek Koch, Independent Software's CEO, discusses the challenges of building our entrepreneurial ecosystem. <br>
+                The CT Mirror – September 11, 2013
+            </p>
+            
+            <br>
+            
+            <p class="img_titlePress">
+                <a href="http://www.createmagazines.com/showMagazine.php?mag_id=n6WroqehmWRiYoWYoqeEnKWcoJqmqqGnmpykp5eYoA==" target="_blank">Leading on the Leading Edge</a>
+            </p>
+            
+            <p class="img_body">
+                Derek Koch, Independent Software's CEO, was chosen as one of Greater New Haven's Rising Stars in 2013.<br>
+                Business New Haven – September 2013
+            </p>
+            
+            <br>
+            
+            <p class="img_titlePress"><a href="http://www.prnewswire.com/news-releases/alliance-healthcare-fund-announces-investment-in-targeted-instant-communications-211008031.html" target="_blank">Alliance Healthcare Fund Announces Investment in Targeted Instant Communications</a></p>
+            <p class="img_body">Our client, Targeted Instant Communications, Inc. (TIC), successfully raised funding for the patent-pending IntelliBlast® communications system we developed.<br>PR Newswire – June 11, 2013</p>
+            
+            <br>
+            
+            <p class="img_titlePress">
+                <a href="http://news.hamlethub.com/danbury/archive/36786-connecticut-created-first-barns-trail-in-the-nation" target="_blank">Connecticut Creates First Barns Trail in the Nation</a>
+            </p>
+            
+            <p class="img_body">
+                We developed the CT Barns iPhone app to accompany the launch of the Connecticut Barns trail.<br>
+                Danbury's Hamlet Hub – June 30, 2013
+            </p>
+            
+            <br>
+        </div>
+        
+        <br clear="left"/><br><br>
+        
+        <div class="center_2 tag_white" id="trapezium_t_grey_half">
+            <strong>Work With Us</strong>
+        </div>
+        
+        <div id="job_titles">
+            <h3>
+                <div class="job_title"><a href="files/appDevInternIndieSoft.pdf" target="_blank">Application Developer Intern</a></div>
+                <div class="job_title"><a href="files/OnlineMarketingCoordinator.pdf" target="_blank">Online Marketing Coordinator</a></div>
+                <div class="job_title"><a href="http://indie-soft.com/a100" target="_blank">A100 Apprentice</a></div>
+            </h3>
+        </div>
+        
+        <div id="workWithUs">
+            <h3><br><a href="javascript:sizecontactus('block')">If you're interested in our services, click here to fill out our inquiry form.</a><br><br></h3>
+        </div>
+        
+        <div id="contactus" name="contactus">
+            <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <input type=hidden name="oid" value="00DA0000000Il2F">
+                <input type=hidden name="retURL" value="http://www.indie-soft.com">
+                
+                <label for="company">Company:</label>
+                <input id="company" maxlength="80" name="company" size="30" type="text" />
+                
+                <br><br>
+                
+                <label for="URL">Website:</label>
+                <input id="URL" maxlength="80" name="URL" size="30" type="text" />
+                
+                <br><br>
+                
+                <label for="first_name">First Name:</label>
+                <input id="first_name" maxlength="40" name="first_name" size="30" type="text" />
+                
+                <br><br>
+                
+                <label for="last_name">Last Name:</label>
+                <input id="last_name" maxlength="80" name="last_name" size="30" type="text" />
+                
+                <br><br>
+                
+                <label for="email">Email:</label>
+                <input id="email" maxlength="80" name="email" size="30" type="text" />
+                
+                <br><br>
+                
+                <label for="phone">Phone:</label>
+                <input id="phone" maxlength="40" name="phone" size="30" type="text" />
+                
+                <br><br>
+                
+                <label for="00NA0000000tbk3">What Is Your Big Idea?</label>
+                <textarea id="00NA0000000tbk3" name="00NA0000000tbk3" rows="7" wrap="soft"></textarea>
+                
+                <br><br>
+                
+                <label for="00NA0000000tbkc">Source of Funding:</label>
+                
+                <select id="00NA0000000tbkc" name="00NA0000000tbkc" title="Source of Funding">
+                    <option value="">--None--</option><option value="VC or Institutional Investors">VC or Institutional Investors</option>
+                    <option value="Angel Investors">Angel Investors</option>
+                    <option value="Friends &amp; Family Investors">Friends &amp; Family Investors</option>
+                    <option value="Self-Funded">Self-Funded</option>
+                </select>
+                
+                <br><br><br>
+                
+                <label for="00NA0000008sLZO">What Can We Do?</label>
+                <textarea  id="00NA0000008sLZO" name="00NA0000008sLZO" type="text" wrap="soft"></textarea>
+                
+                <br><br>
+                
+                <label for="00NA0000008sLZc">Timeline:</label>
+                <textarea id="00NA0000008sLZc" name="00NA0000008sLZc" type="text" wrap="soft"></textarea>
+                
+                <br><br>
+                
+                <input type="submit" name="submit" style="margin-left: 30%;">
+            </form>
+        </div>
+        
+        <script type="text/javascript">
+        <!--
+        function sizecontactus(h) {
+          var tbl = document.getElementById('contactus');
+          contactus.style.display = h;
+        }
+        // -->
+        </script> 
+        
+        <br clear="left"/>
+        
+        <div id="footer">
+            <div id="desktop_footer">
+                <div id="col_holder_footer">
+                    <div id="col_1_footer" >
+                        <p>CONTACT US</p>
+                        <p>760 Chapel Street</p>
+                        <p>New Haven, CT 06510</p>
+                        <p><a class="phone" href="tel:888-224-1340">888-224-1340</a></p>
+                        <p><a class="email" href="mailto:info@indie-soft.com">info@indie-soft.com</a></p>
+                    </div>
+                    
+                    <div id="col_2_footer" >
+                        &nbsp;
+                        <img src="img/nhvBuilt.png" />
+                    </div>
+                    
+                    <div id="col_3_footer" >
+                        &nbsp;
+                        <img src="img/indie_and_thegrid.png" />
+                    </div>
+                </div>  
+            </div>
+            
+            <div id="mobile_footer">
+                <div id="footer_info">
+                    <p>CONTACT US</p>
+                    <p>760 Chapel Street</p>
+                    <p>New Haven, CT 06510</p>
+                    <p><a class="phone" href="tel:888-224-1340">888-224-1340</a></p>
+                    <p><a class="email" href="info@indie-soft.com">info@indie-soft.com</a></p>
+                    &nbsp;
+                    <p><img src="img/nhvBuilt.png"></p>
+                    <p><img src="img/indie_and_thegrid.png"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
