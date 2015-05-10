@@ -400,7 +400,14 @@ a:active:hover {
           width: 120px;
           height: auto;
           padding: 5px;
+
         }
+
+        .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
     /* SKILLS */
       /* Type */
