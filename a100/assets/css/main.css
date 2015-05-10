@@ -119,6 +119,10 @@ a:active:hover {
 
       #employerCallOut { background: #7b1219; }
 
+      #header {
+        background: #006496;
+      }
+
       #hero {
         background: url("../img/heroBG.jpg") no-repeat;
         background-size: 100% auto;
@@ -230,8 +234,18 @@ a:active:hover {
       }
 
 
+    /* HEADER */
+        #header .facebook:hover {
+          color: #3b5998;
+        }
 
+        #header .twitter:hover {
+          color: #2094CA;
+        }
 
+        #header .mail:hover {
+          color: #f39c12; 
+        }
 
     /* HERO */
       .employerLink {
@@ -459,18 +473,6 @@ a:active:hover {
           text-align: left; }
 
         .marginRight { margin-right: 20px; }
-
-        #contact .facebook:hover {
-          color: #3b5998;
-        }
-
-        #contact .twitter:hover {
-          color: #2094CA;
-        }
-
-        #contact .mail:hover {
-          color: #f39c12; 
-        }
 
 
 
