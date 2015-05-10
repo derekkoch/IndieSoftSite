@@ -119,8 +119,10 @@ a:active:hover {
 
       #employerCallOut { background: #7b1219; }
 
-      #header {
+      #nav {
         background: #006496;
+        margin: 0px;
+        font-size: 1.5em;
       }
 
       #hero {
@@ -234,17 +236,17 @@ a:active:hover {
       }
 
 
-    /* HEADER */
-        #header .facebook:hover {
-          color: #3b5998;
-        }
-
-        #header .twitter:hover {
+    /* NAV */
+        #nav .facebook:hover {
           color: #2094CA;
         }
 
-        #header .mail:hover {
-          color: #f39c12; 
+        #nav .twitter:hover {
+          color: #2094CA;
+        }
+
+        #nav .mail:hover {
+          color: #2094CA; 
         }
 
     /* HERO */
