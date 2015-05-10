@@ -66,7 +66,7 @@ a:active:hover {
   width: 100%;
   position: absolute;
   top: 50%;
-  margin-top: -195px; }
+  margin-top: -300px; }
 
 .hero-image {
   position: relative;
@@ -176,7 +176,7 @@ a:active:hover {
         /* Margins */
           .topMargin { margin-top: 30px; }
 
-          .topMarginX { margin-top: 50px; }
+          /*.topMarginX { margin-top: 50px; }*/
 
           .topMarginBig {margin-top: 100px; }
 
