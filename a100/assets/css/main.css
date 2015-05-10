@@ -194,6 +194,15 @@ a:active:hover {
             line-height: 1.3em;
             color: white; }
 
+        .headerBio {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 1.4em;
+          letter-spacing: -.045em;
+          line-height: 1.3em;
+          color: white;
+          margin-top: 10px; }
+
         .headerLightBG {
           font-family: 'Montserrat', sans-serif;
           font-weight: 400;
