@@ -176,7 +176,7 @@ a:active:hover {
         /* Margins */
           .topMargin { margin-top: 30px; }
 
-          /*.topMarginX { margin-top: 50px; }*/
+          .topMarginX { margin-top: 50px; }
 
           .topMarginBig {margin-top: 100px; }
 
@@ -295,7 +295,19 @@ a:active:hover {
           line-height: 1.1em;
           color: #7b7c7f;
           padding-left: 5%;
-          padding-right: 5%; }
+          padding-right: 5%; 
+          margin-bottom: 5%; }
+
+        .buttonHeading {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          font-size: 1.25em;
+          letter-spacing: -.045em;
+          line-height: 1em;
+          color: #7b7c7f;
+          padding-left: 5%;
+          padding-right: 5%; 
+          margin-bottom: 5%; }
 
         .companyLink {
           font-family: 'Montserrat', sans-serif;
