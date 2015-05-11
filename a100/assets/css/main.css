@@ -358,7 +358,11 @@ a:active:hover {
           height: 18px;
           background: url("../img/arrowInfo.png") no-repeat; }
 
-        .heroApply { background: url("../img/buttonApply.png") no-repeat; }
+        .hire { background: url("../img/button/hire-button.png") no-repeat; }
+
+        .apply { background: url("../img/button/apply-button.png") no-repeat; }
+
+        .build { background: url("../img/button/build-button.png") no-repeat; }
 
       /* Links */
         .hero-block a:hover {
