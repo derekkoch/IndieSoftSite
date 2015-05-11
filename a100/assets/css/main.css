@@ -133,10 +133,17 @@ a:active:hover {
 
       #programXS,
       #program,
-      #testimonials,
       #curriculum {
         background: #006496;
         padding: 50px; }
+
+      #testimonials {
+        background: #006496;
+        padding-top: 0px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+      }
 
       #samples,
       #technologies,
@@ -520,10 +527,17 @@ a:active:hover {
         padding: 5px;
     }
 
-    #testimonialsXS,
     #programXS {
       background: #006496;
       padding: 50px;
+    }
+
+    #testimonialsXS {
+      background: #006496;
+      padding-top: 0px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+      padding-left: 50px;
     }
 
     #contactXS {
