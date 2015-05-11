@@ -1965,12 +1965,6 @@ pre code {
   .col-md-2 {
     width: 16.66666667%;
   }
-   .vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-    margin-right:-4px;
-}
   .col-md-1 {
     width: 8.33333333%;
   }
@@ -6588,4 +6582,12 @@ button.close {
     display: none !important;
   }
 }
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-right:-4px;
+  }
+
 /*# sourceMappingURL=bootstrap.css.map */
