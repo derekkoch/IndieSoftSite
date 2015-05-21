@@ -559,6 +559,18 @@ a:active:hover {
           color: #888d90;
           text-align: left; }
 
+        #contact .facebook:hover {
+          color: #2094CA;
+        }
+
+        #contact .twitter:hover {
+          color: #2094CA;
+        }
+
+        #contact .mail:hover {
+          color: #2094CA; 
+        }
+
         .marginRight { margin-right: 20px; }
 
 
