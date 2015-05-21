@@ -27,7 +27,7 @@ a:link,
 a:visited,
 a:active {
   font-weight: 600;
-  color: #f5f6f7;
+  color: #0d6594;
   text-decoration: none;
 }
 
@@ -120,7 +120,7 @@ a:active:hover {
       #employerCallOut { background: #7b1219; }
 
       #nav {
-        background: #006496;
+        background: #ebecee;
         margin: 0px;
         font-size: 1.5em;
       }
@@ -216,6 +216,9 @@ a:active:hover {
           font-size: 1.4em;
           letter-spacing: -.045em;
           line-height: 1.3em;
+          color: #7b7c7f; }
+
+        .navredo {
           color: #7b7c7f; }
 
 
