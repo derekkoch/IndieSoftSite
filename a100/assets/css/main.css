@@ -7,9 +7,6 @@
 body {
   background: white;
   color: #f5f6f7; }
-
-
-
   
   /*=======================
 	 ** GENERAL STYLES ** 
@@ -183,6 +180,8 @@ a:active:hover {
           .allCaps { text-transform: uppercase; }
 
         /* Margins */
+          .topMarginS { margin-top: 20px; }
+
           .topMargin { margin-top: 30px; }
 
           .topMarginX { margin-top: 50px; }
@@ -221,7 +220,8 @@ a:active:hover {
           color: #7b7c7f; }
 
         .navredo {
-          color: #7b7c7f; }
+          color: #7b7c7f;
+         }
 
 
       /* CONTENT */
@@ -361,19 +361,36 @@ a:active:hover {
         }
 
       /* Images */
+        .access {
+          background: url("../img/button/access-button.png") no-repeat;
+          position:relative;
+          vertical-align: middle;
+          width: 100px;
+          height: auto;
+        }
+
+        .access:hover > .overlay  { 
+          width:100%;
+          height:100%;
+          position:absolute;
+          background-color:#000;
+          opacity:0.5;
+          border-radius:30px; 
+        }
+
         .heroBG {
           max-width: 100%;
           height: auto; 
         }
 
         #a100Logo .img { 
-           max-height: 16em;
-           width: auto;
+          max-height: 18em;
+          width: auto;
         }
 
         .down-arrow {
           width: 29px;
-          height: 18px;
+          height: 16px;
           background: url("../img/arrowInfo.png") no-repeat; 
         }
 
@@ -418,6 +435,7 @@ a:active:hover {
           opacity:0.5;
           border-radius:30px;
         }
+
 
       /* Links */
         .hero-block a:hover {
