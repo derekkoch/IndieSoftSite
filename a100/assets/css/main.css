@@ -44,7 +44,10 @@ a:active:hover {
   text-decoration: none;
 }
 
-
+.normal {
+  text-decoration: none;
+  cursor: default; 
+}
 
 .mb-7 {
   margin-bottom: 70px;
