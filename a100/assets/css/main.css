@@ -7,9 +7,6 @@
 body {
   background: white;
   color: #f5f6f7; }
-
-
-
   
   /*=======================
 	 ** GENERAL STYLES ** 
@@ -27,7 +24,7 @@ a:link,
 a:visited,
 a:active {
   font-weight: 600;
-  color: #f5f6f7;
+  color: #0d6594;
   text-decoration: none;
 }
 
@@ -47,7 +44,10 @@ a:active:hover {
   text-decoration: none;
 }
 
-
+.normal {
+  text-decoration: none;
+  cursor: default; 
+}
 
 .mb-7 {
   margin-bottom: 70px;
@@ -66,7 +66,7 @@ a:active:hover {
   width: 100%;
   position: absolute;
   top: 50%;
-  margin-top: -195px; }
+  margin-top: -300px; }
 
 .hero-image {
   position: relative;
@@ -82,7 +82,9 @@ a:active:hover {
 #work {
   background: #3498db; }
 
-
+.former {
+  background-color: #0090bf
+}
 
 
 /* =========================
@@ -119,6 +121,12 @@ a:active:hover {
 
       #employerCallOut { background: #7b1219; }
 
+      #nav {
+        background: #ebecee;
+        margin: 0px;
+        font-size: 1.5em;
+      }
+
       #hero {
         background: url("../img/heroBG.jpg") no-repeat;
         background-size: 100% auto;
@@ -127,10 +135,17 @@ a:active:hover {
 
       #programXS,
       #program,
-      #testimonials,
       #curriculum {
         background: #006496;
         padding: 50px; }
+
+      #testimonials {
+        background: #006496;
+        padding-top: 0px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+      }
 
       #samples,
       #technologies,
@@ -168,13 +183,15 @@ a:active:hover {
           .allCaps { text-transform: uppercase; }
 
         /* Margins */
+          .topMarginS { margin-top: 20px; }
+
           .topMargin { margin-top: 30px; }
 
           .topMarginX { margin-top: 50px; }
 
           .topMarginBig {margin-top: 100px; }
 
-          .bottomMargin { margin-bottom: 30px; }
+          .bottomMargin { margin-bottom: 20px; }
 
         /* Sizing */
           .small { font-size: 1em; }
@@ -188,6 +205,15 @@ a:active:hover {
             line-height: 1.3em;
             color: white; }
 
+        .headerBio {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 1.4em;
+          letter-spacing: -.045em;
+          line-height: 1.3em;
+          color: white;
+          margin-top: 10px; }
+
         .headerLightBG {
           font-family: 'Montserrat', sans-serif;
           font-weight: 400;
@@ -195,6 +221,10 @@ a:active:hover {
           letter-spacing: -.045em;
           line-height: 1.3em;
           color: #7b7c7f; }
+
+        .navredo {
+          color: #7b7c7f;
+         }
 
 
       /* CONTENT */
@@ -230,8 +260,18 @@ a:active:hover {
       }
 
 
+    /* NAV */
+        #nav .facebook:hover {
+          color: #2094CA;
+        }
 
+        #nav .twitter:hover {
+          color: #2094CA;
+        }
 
+        #nav .mail:hover {
+          color: #2094CA; 
+        }
 
     /* HERO */
       .employerLink {
@@ -260,7 +300,8 @@ a:active:hover {
           color: #3e3e3e;
           padding-top: 20px;
           padding-left: 5%;
-          padding-right: 5%;  }
+          padding-right: 5%;  
+        }
 
         .subheading {
           font-family: 'Open Sans', sans-serif;
@@ -270,7 +311,21 @@ a:active:hover {
           line-height: 1.1em;
           color: #7b7c7f;
           padding-left: 5%;
-          padding-right: 5%; }
+          padding-right: 5%; 
+          margin-bottom: 5%; 
+        }
+
+        .buttonHeading {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          font-size: 1.25em;
+          letter-spacing: -.045em;
+          line-height: 1em;
+          color: #7b7c7f;
+          padding-left: 5%;
+          padding-right: 5%; 
+          margin-bottom: 5%;
+        }
 
         .companyLink {
           font-family: 'Montserrat', sans-serif;
@@ -281,7 +336,8 @@ a:active:hover {
           position: relative;
           top: 10%;
           left: 53%; */
-          color: #7b1219; }
+          color: #7b1219; 
+        }
 
         .companyLinkXS {
           font-family: 'Montserrat', sans-serif;
@@ -292,7 +348,8 @@ a:active:hover {
           position: relative;
           top: 10%;
           left: 53%; */
-          color: #7b1219; }
+          color: #7b1219; 
+        }
 
         .moreInfo {
          bottom: 30px;
@@ -303,25 +360,58 @@ a:active:hover {
           font-size: 12pt;
           letter-spacing: -.04em;
           line-height: 1.1em;
-          color: #919191; }
+          color: #919191; 
+        }
 
       /* Images */
+        .access {
+          background: url("../img/button/access-button.png") no-repeat;
+          position:relative;
+          vertical-align: middle;
+          width: 100px;
+          height: auto;
+        }
+
+        .access:hover > .overlay  { 
+          width:100%;
+          height:100%;
+          position:absolute;
+          background-color:#000;
+          opacity:0.5;
+          border-radius:30px; 
+        }
+
         .heroBG {
           max-width: 100%;
           height: auto; 
         }
 
         #a100Logo .img { 
-           max-height: 18em;
-           width: auto;
+          max-height: 18em;
+          width: auto;
         }
 
         .down-arrow {
           width: 29px;
-          height: 18px;
-          background: url("../img/arrowInfo.png") no-repeat; }
+          height: 16px;
+          background: url("../img/arrowInfo.png") no-repeat; 
+        }
 
-        .heroApply { background: url("../img/buttonApply.png") no-repeat; }
+        .hire {
+          background: url("../img/button/hire-button.png") no-repeat;
+          position:relative;
+        }
+
+        .apply {
+          background: url("../img/button/apply-button.png") no-repeat; 
+          position:relative;
+        }
+
+        .build {
+          background: url("../img/button/build-button.png") no-repeat;
+          position:relative;
+        }
+
 
       /* Links */
         .hero-block a:hover {
@@ -386,7 +476,14 @@ a:active:hover {
           width: 120px;
           height: auto;
           padding: 5px;
+
         }
+
+        .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
     /* SKILLS */
       /* Type */
@@ -458,10 +555,8 @@ a:active:hover {
           color: #888d90;
           text-align: left; }
 
-        .marginRight { margin-right: 20px; }
-
         #contact .facebook:hover {
-          color: #3b5998;
+          color: #2094CA;
         }
 
         #contact .twitter:hover {
@@ -469,8 +564,10 @@ a:active:hover {
         }
 
         #contact .mail:hover {
-          color: #f39c12; 
+          color: #2094CA; 
         }
+
+        .marginRight { margin-right: 20px; }
 
 
 
@@ -484,10 +581,17 @@ a:active:hover {
         padding: 5px;
     }
 
-    #testimonialsXS,
     #programXS {
       background: #006496;
       padding: 50px;
+    }
+
+    #testimonialsXS {
+      background: #006496;
+      padding-top: 0px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+      padding-left: 50px;
     }
 
     #contactXS {
@@ -557,20 +661,6 @@ a:active:hover {
           text-align: left;
         }
 
-        #contactXS .facebook:hover {
-          color: #3b5998;
-        }
-
-        #contactXS .twitter:hover {
-          color: #2094CA;
-        }
-
-        #contactXS .mail:hover {
-          color: #f39c12; 
-        }
-
-
-
 
 /** DEPRECATED
  ******************************/
@@ -637,3 +727,13 @@ hr {
       width: 100%;
       height: 100%;
       padding-top: 200px; }
+
+
+      @media print {
+        a[href]:after {
+           content: none !important;
+        }
+        body {width:750px;}
+        div[class|=col-]{float:left;}
+        /*.col-sm-6{width:50%}  */
+      }
