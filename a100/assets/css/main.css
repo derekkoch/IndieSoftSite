@@ -7,6 +7,9 @@
 body {
   background: white;
   color: #f5f6f7; }
+h1.SEO {
+  display: none;
+}
   
   /*=======================
 	 ** GENERAL STYLES ** 
