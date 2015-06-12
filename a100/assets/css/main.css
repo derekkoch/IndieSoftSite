@@ -367,6 +367,7 @@ a:active:hover {
         }
 
       /* Images */
+        .meetup { padding-top: 10px;}
         .access {
           background: url("../img/button/access-button.png") no-repeat;
           position:relative;
