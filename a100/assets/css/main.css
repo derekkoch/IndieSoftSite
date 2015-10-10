@@ -4,6 +4,18 @@
  * Built as part of the Apprentice100 Program
  * Winter Cohort 2014 */
 
+ #testimonials img {
+    width: 175px;
+    height: auto;
+ }
+
+ #team img {
+    width: 175px;
+    height: auto;
+    /*border-color: $bright-blue !important;
+    border: 10px solid;*/
+}
+
 body {
   background: white;
   color: #f5f6f7;
@@ -107,8 +119,6 @@ h1.SEO {
   /* MODULES */
     /* Backgrounds */
 
-      #employerCallOut { background: #7b1219; }
-
       #nav {
         background: #ebecee;
         margin: 0px;
@@ -121,31 +131,6 @@ h1.SEO {
         height: auto;
         text-align: center;
     }
-
-        #media-header,
-        #programXS {
-            background: #006496;
-            padding: 50px;
-        }
-
-      #applicants {
-        background: white;
-        padding: 50px; }
-
-      #apply,
-      #applyXS,
-      #contact {
-        background: #ebecee;
-        padding: 50px; }
-
-      #footer,
-      #networks {
-        background: #3e3e3e;
-        padding: 50px; }
-
-      .noTopPadding { padding-top: 0px; }
-
-      .noBottomPadding { padding-bottom: 0px; }
 
     /* Type */
 
@@ -239,12 +224,6 @@ h1.SEO {
           text-decoration: none;
         }
 
-
-      /* Images */
-        .topPadding {
-          padding-top: 1px;
-        }
-
     /* TECHNOLOGIES */
       /* Tables */
         #technologies tr td {
@@ -269,8 +248,6 @@ h1.SEO {
 
     /* SKILLS */
 
-      /* Images */
-
       /* Tables */
         #skills tr td {
           padding-top: 20px;
@@ -290,52 +267,12 @@ h1.SEO {
         #contact i {
           font-size: 25px;
           color: #888d90;
-          text-align: left; }
-
-        #contact .facebook:hover {
-          color: #2094CA;
-        }
-
-        #contact .twitter:hover {
-          color: #2094CA;
-        }
-
-        #contact .mail:hover {
-          color: #2094CA;
-        }
-
-        .marginRight { margin-right: 20px; }
-
-
+          text-align: left;
+          margin-right: 20px;}
 
 
 /** MOBILE CONTENT MODULES
  ******************************/
-
-  /* Backgrounds XS */
-    #employerXS {
-        background: #006496;
-        padding: 5px;
-    }
-
-    #programXS {
-      background: #006496;
-      padding: 50px;
-    }
-
-    #media-content-xs,
-    #testimonialsXS {
-      background: #006496;
-      padding-top: 0px;
-      padding-right: 50px;
-      padding-bottom: 50px;
-      padding-left: 50px;
-    }
-
-    #contactXS {
-      background: #ebecee;
-      padding: 50px;
-    }
 
   /* HERO XS */
     /* Images */
@@ -347,33 +284,33 @@ h1.SEO {
 
   /* Contact XS */
     /* Images */
-        #contactXS i {
+        /*#contactXS i {
           font-size: 25px;
           color: #888d90;
           margin-right: 20px;
           text-align: left;
-        }
+        }*/
 
 
 /** DEPRECATED
  ******************************/
-nav ul {
+/*nav ul {
   list-style: none; }
 
 blockquote, q {
   quotes: none; }
 
 blockquote:before, blockquote:after, q:before, q:after {
-  content: none; }
+  content: none; }*/
 
 
-hr {
+/*hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0; }*/
     /* NAVIGATION */
       /* General */
        .nav {
@@ -414,12 +351,6 @@ hr {
             -ms-transform: scale(1);
             -o-transform: scale(1);
             transform: scale(1); }
-
-  /* FOOTER */
-    #networks {
-      width: 100%;
-      height: 100%;
-      padding-top: 200px; }
 
 
       @media print {
