@@ -1,0 +1,118 @@
+// compileOnSave
+
+@import "vendor/normalize";
+
+@import "partials/base";
+@import "partials/type";
+@import "partials/icons";
+@import "partials/images";
+
+@import "modules/hero";
+
+
+  @mixin section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+/* ====== Global ====== */
+
+  html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+  }
+
+  h1.SEO { display: none; }
+
+  #companies,
+  #samples,
+  #tuition,
+  #technologies {
+    background: white;
+    @include section-padding;
+  }
+
+  #contact,
+  #mvs {
+    background: $light-gray-bg;
+    @include section-padding;
+  }
+
+  #testimonials,
+  #team,
+  #media,
+  #program,
+  #curriculum {
+    background: $blue-bg;
+    @include section-padding;
+  }
+
+  #footer {
+    background: $dark-gray;
+    @include section-padding;
+  }
+
+  #companies,
+  #samples,
+  #tuition,
+  #applicants,
+  #technologies,
+  #contact,
+  #mvs {
+    h4, p { @extend .dark; }
+  }
+
+  #testimonials,
+  #team,
+  #media,
+  #program,
+  #footer,
+  #curriculum {
+    h4 {
+      @extend .headline-light;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      @extend .light;
+    }
+  }
+
+
+  @media (max-width: $md) {
+
+    #samples {
+      text-align: center;
+    }
+
+  }
+
+  @media (max-width: $lg) {
+
+    #contact,
+    #footer {
+        text-align: center;
+    }
+  }
+
+@media (max-width: $md) {
+    .container {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: $md) {
+    .container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* ========================================================================== */
