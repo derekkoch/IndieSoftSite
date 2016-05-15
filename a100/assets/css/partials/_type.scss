@@ -32,11 +32,12 @@
       // margin-top: 1rem;
     }
 
+/* Sections
+  =========================================================================== */
 
-  .name {
-    @extend .light;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+  #program {
+    h2 { @include headline-light; }
+    p { @include light; }
   }
-
-  .title { @extend .light; }
+//
+//   .title { @extend .light; }
