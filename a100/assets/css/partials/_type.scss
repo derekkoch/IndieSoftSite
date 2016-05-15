@@ -8,8 +8,8 @@
   =========================================================================== */
 
   @mixin text($color, $weight) {
-    font-weight: $weight;
     color: $color;
+    font-weight: $weight;
   }
 
 /* ====== Classes ====== */
