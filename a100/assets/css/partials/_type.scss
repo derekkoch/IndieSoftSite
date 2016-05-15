@@ -15,14 +15,8 @@
   @mixin headline-light { @include text($text-light, 300); }
   @mixin headline-dark { @include text($text-dark, 300); }
 
-  .headline-dark {
-    @include text($text-dark, 700);
-  }
-
-  .headline-light {
-    @include text(white, 300);
-    font-size: 2.25rem;
-  }
+  @mixin light { @include text($text-light, 200); }
+  @mixin dark { @include text($text-dark, 200); }
 
   .light {
     @include text(white, 200);
