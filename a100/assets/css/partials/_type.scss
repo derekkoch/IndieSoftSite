@@ -12,7 +12,8 @@
     font-weight: $weight;
   }
 
-/* ====== Classes ====== */
+  @mixin headline-light { @include text($text-light, 300); }
+  @mixin headline-dark { @include text($text-dark, 300); }
 
   .headline-dark {
     @include text($text-dark, 700);
