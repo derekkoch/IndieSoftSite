@@ -18,20 +18,20 @@
   @mixin light { @include text($text-light, 200); }
   @mixin dark { @include text($text-dark, 200); }
 
-  .light {
-    @include text(white, 200);
-    font-size: 1rem;
-  }
+/* Classes
+  =========================================================================== */
+    .emphasis {
+      @include text($text-light, 200);
+      font-size: 1.5rem;
+      font-style: italic;
+    }
 
-  .dark {
-    @include text($text-dark, 300);
-  }
+    .name {
+      @extend .light;
+      font-size: 1.2rem;
+      // margin-top: 1rem;
+    }
 
-  .emphasis {
-    @include text(white, 200);
-    font-size: 1.5rem !important;
-    font-style: italic;
-  }
 
   .name {
     @extend .light;
