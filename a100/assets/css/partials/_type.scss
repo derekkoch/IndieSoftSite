@@ -15,6 +15,9 @@
   @mixin headline-light { @include text($text-light, 300); }
   @mixin headline-dark { @include text($text-dark, 300); }
 
+  @mixin subheader-light { @include text($text-light, 700); }
+  @mixin subheader-dark { @include text($text-dark, 700); }
+
   @mixin light { @include text($text-light, 200); }
   @mixin dark { @include text($text-dark, 300); }
 
