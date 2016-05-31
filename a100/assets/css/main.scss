@@ -64,14 +64,6 @@
     @include section-padding;
   }
 
-  @media (max-width: $md) {
-
-    #samples {
-      text-align: center;
-    }
-
-  }
-
   @media (max-width: $lg) {
 
     #contact,
@@ -79,19 +71,5 @@
         text-align: center;
     }
   }
-
-@media (max-width: $md) {
-    .container {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-}
-
-@media (min-width: $md) {
-    .container {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-}
 
 /* ========================================================================== */
