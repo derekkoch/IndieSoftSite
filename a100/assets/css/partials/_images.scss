@@ -1,0 +1,34 @@
+
+
+  #testimonials,
+  #team,
+  #meteor-partner {
+    img {
+      width: 175px;
+      height: auto;
+    }
+  }
+
+.img-circle { border-radius: 50%; }
+
+.techLogo {
+  width: 120px;
+  height: auto;
+  padding: 5px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.logo {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 175px;
+}

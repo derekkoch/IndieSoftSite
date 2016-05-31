@@ -1,0 +1,97 @@
+
+/* Imports
+  =========================================================================== */
+
+  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Mixins
+  =========================================================================== */
+
+  @mixin text($color, $weight) {
+    color: $color;
+    font-weight: $weight;
+  }
+
+  @mixin headline-light { @include text($text-light, 300); }
+  @mixin headline-dark { @include text($text-dark, 300); }
+
+  @mixin subheader-light { @include text($text-light, 700); }
+  @mixin subheader-dark { @include text($text-dark, 700); }
+
+  @mixin light { @include text($text-light, 200); }
+  @mixin dark { @include text($text-dark, 300); }
+
+/* Element Rules
+  =========================================================================== */
+
+  sup {
+    vertical-align: super;
+    font-size: .85rem;
+    left: -0.35em;
+  }
+
+  address {
+    color: white;
+  }
+
+/* Classes
+  =========================================================================== */
+
+  .tech-name {
+    @include dark;
+    font-weight: bold;
+  }
+    .emphasis {
+      @include text($text-light, 200);
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+
+    .team-name {
+      @extend .light;
+      font-size: 1.2rem;
+    }
+
+    .team-title {
+      @include light;
+      font-size: .9rem;
+      font-style: italic;
+    }
+
+/* Sections
+  =========================================================================== */
+
+  #footer,
+  #testimonials,
+  #program,
+  #curriculum,
+  #team {
+    h2 { @include headline-light; }
+    h4 { @include subheader-light; }
+    p { @include light; }
+  }
+
+  #footer,
+  #media,
+  #tuition,
+  #contact,
+  #companies,
+  #mvs,
+  #meteor-partner,
+  #technologies,
+  #samples,
+  #applicants {
+    h2 { @include headline-dark; }
+    h4 { @include subheader-dark; }
+    ul > li { @include dark; }
+    p { @include dark; }
+  }
+
+/* Responsive
+  =========================================================================== */
+
+  @media (max-width: 62em) {
+    #samples { text-align: center !important; }
+  }
+//
+//   .title { @extend .light; }

@@ -1,0 +1,247 @@
+
+/* ====== MENUS ======== */
+
+  /* === Visibility === */
+    .hero-menu {
+      display: none;
+
+      @media #{$xs} { display: block; }
+      @media #{$smd} { display: none; }
+
+      @media #{$landscape-phone} { display: block; }
+    }
+
+    .hero-menu-inline {
+
+      margin-top: 1rem;
+
+      display: none;
+      @media #{$smd} { display: block; }
+      @media #{$landscape-phone} { display: none; }
+    }
+
+  /*=== Alignment ===*/
+
+    .hero-menu > li:nth-child(1),
+    .hero-menu > li:nth-child(2) {
+      margin-bottom: .75em;
+    }
+
+/* ====== CONTAINERS ====== */
+
+  .flex-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start; /* align items in Main Axis */
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+  }
+
+  .flex-header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: .5rem;
+  }
+
+  .logo-container {
+    flex: content;
+    padding: .5em;
+  }
+
+  .login-container {
+    margin-left: auto;
+    padding: .5em;
+  }
+
+  .fill-area {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center; /* align items in Main Axis */
+    align-items: center; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+  }
+
+  .flex-hero {
+    flex: 1;
+  }
+
+  .fill-area-content {
+    /* Needed for when the area gets squished too far and there is content that can't be displayed */
+    overflow: auto;
+    text-align: center;
+  }
+
+/* ====== TYPOGRAPHY ====== */
+
+  .header-break {
+    @media #{$xs} { display: block;}
+    @media #{$md} { display: none; }
+    @media #{$landscape-phone} { display: none; }
+  }
+
+  .hero-header {
+    font-weight: 900;
+    color: $dark-gray;
+    letter-spacing: -.75px;
+
+    margin-bottom: .75rem;
+
+    /* Portrait Sizing */
+    @media #{$xs} { font-size: 8vw; }
+    @media #{$md} { font-size: 4.6vw; }
+    @media #{$lg} { font-size: 3.1rem; }
+    @media #{$xl} { font-size: 3.6rem; }
+
+    /* Landscape Sizing */
+    @media #{$landscape-phone} { font-size: 4.5vw; }
+
+  }
+
+  .subheading {
+    font-weight: 300;
+    color: $text-dark;
+
+    font-size: 1.75rem;
+    line-height: 1.5rem;
+
+    // margin-bottom: 1.4em;
+
+    @media #{$xs} { font-size: .95rem; }
+    @media #{$sm} { font-size: 1.1rem; }
+    @media #{$md} { font-size: 1.2rem; }
+  }
+
+/* ====== IMAGES ====== */
+
+  #hero {
+    background-image: url("../img/heroBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*== Classes ==*/
+
+    .hero-icon {
+      height: 45px;
+      width: auto;
+
+      /* Portrait Visibility */
+      @media #{$xs} { display: block; }
+      @media #{$sm} { display: none; }
+
+      /* Landscape Visibility */
+      @media #{$landscape-phone} { display: none; }
+    }
+
+    .hero-logo {
+      width: auto;
+
+      /* Portrait Visibility */
+      @media #{$xs} { display: none; }
+      @media #{$sm} { display: block; }
+
+      /* Landscape Visibility */
+      @media #{$landscape-phone} { display: block; }
+
+      /* Portrait Sizing */
+      @media #{$xs} { max-height: 20px; }
+      @media #{$sm} { max-height: 25px; }
+      @media #{$md} { max-height: 30px; }
+
+      /* Landscape Sizing */
+      @media #{$landscape-phone} { max-height: 25px; }
+    }
+
+    .hero-shield {
+      margin-bottom: 1em;
+      width: auto;
+
+      /* Portrait Sizing */
+      @media #{$xs} { max-height: 150px; }
+      @media #{$sm} { max-height: 200px; }
+      @media #{$md} { max-height: 250px; }
+
+      /* Landscape Sizing */
+      @media #{$landscape-phone} { max-height: 150px; }
+    }
+
+/* ====== Buttons ====== */
+
+  /*== Mixins ==*/
+    @mixin button-outline-variant($color) {
+      color: lighten($color, 8%);
+      background-image: none;
+      background-color: transparent;
+      border-color: lighten($color, 8%);
+
+      &:focus,
+      &.focus,
+      &:active,
+      &.active,
+      .open > &.dropdown-toggle {
+        color: #fff;
+        background-color: lighten($color, 8%);
+            border-color: lighten($color, 8%);
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: lighten($color, 8%);
+        border-color: lighten($color, 8%);
+      }
+
+      &.disabled,
+      &:disabled,
+      fieldset[disabled] & {
+        &:focus,
+        &.focus {
+          border-color: lighten($color, 20%);
+        }
+        &:hover {
+          border-color: lighten($color, 20%);
+        }
+      }
+    }
+
+    @mixin hero-btn {
+      @include button-outline-variant($dark-blue);
+      border-radius: 0px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+  /*== Classes ==*/
+    .access-button {
+      border-radius: 0px !important;
+      border-color: $light-blue !important;
+      color: $light-blue !important;
+      text-decoration: none !important;
+      font-weight: 600 !important;
+      font-size: .70rem !important;
+      letter-spacing: .05em !important;
+
+      &:hover {
+          background: $light-blue;
+          color: white !important;
+      }
+    }
+
+    .hero-btn-sm {
+      @include hero-btn;
+      font-size: .85rem;
+    }
+
+    .hero-btn {
+      @include hero-btn;
+
+      @media #{$smd} {
+        font-size: .85rem;
+      }
+
+      font-size: .92rem;
+    }

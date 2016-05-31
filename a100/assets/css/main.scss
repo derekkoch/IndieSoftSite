@@ -1,0 +1,75 @@
+// compileOnSave
+
+@import "vendor/normalize";
+@import "vendor/bootstrap/utilities-spacing";
+@import "vendor/bootstrap/utilities-responsive";
+
+
+@import "partials/base";
+@import "partials/type";
+@import "partials/icons";
+@import "partials/images";
+
+@import "modules/hero";
+
+
+  @mixin section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+/* ====== Global ====== */
+
+  html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+  }
+
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+  }
+
+  h1.SEO { display: none; }
+
+  #applicants,
+  #meteor-partner,
+  #companies,
+  #samples,
+  #tuition,
+  #technologies {
+    background: white;
+    @include section-padding;
+  }
+
+  #media,
+  #contact,
+  #mvs {
+    background: $light-gray-bg;
+    @include section-padding;
+  }
+
+  #testimonials,
+  #team,
+  #program,
+  #curriculum {
+    background: $blue-bg;
+    @include section-padding;
+  }
+
+  #footer {
+    background: $dark-gray;
+    @include section-padding;
+  }
+
+  @media (max-width: $lg) {
+
+    #contact,
+    #footer {
+        text-align: center;
+    }
+  }
+
+/* ========================================================================== */

@@ -1,0 +1,35 @@
+
+/* ======  Sizes ====== */
+
+    // Defined by Bootstrap v4.
+    // http://v4-alpha.getbootstrap.com/layout/overview/
+
+    $xs: "(min-width: 0em)";                // Extra Small
+    $sm: "(min-width: 34em)";               // Small
+    $smd: "(min-width: 41em)";              // Smedium
+    $md: "(min-width: 48em)";               // Medium
+    $mlg: "(min-width: 55em)";              // Mlarge
+    $lg: "(min-width: 62em)";               // Large
+    $xl: "(min-width: 75em)";               // Extra Large
+
+    $landscape-phone: "(max-height: 29em)";
+
+    $xxs-height: "screen and (min-height: 320px) and (max-height: 374px)";
+    $xs-height: "screen and (min-height: 375px) and (max-height: 479px)";
+
+    $landscape-up:      "(min-width: 34em)";
+
+/* ======  Colors ====== */
+
+  $dark-blue: #00619C;
+  $light-blue: #0090BE;
+  $social-media-blue: #2094CA;
+
+  // Section BGs
+  $blue-bg: #006496;
+  $light-gray-bg: #ebecee;
+  $dark-gray: #3e3e3e;
+
+  // Text
+  $text-light: white;
+  $text-dark: #7b7c7f;
