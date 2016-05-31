@@ -16,7 +16,16 @@
   @mixin headline-dark { @include text($text-dark, 300); }
 
   @mixin light { @include text($text-light, 200); }
-  @mixin dark { @include text($text-dark, 200); }
+  @mixin dark { @include text($text-dark, 300); }
+
+/* Element Rules
+  =========================================================================== */
+
+  sup {
+    vertical-align: super;
+    font-size: .85rem;
+    left: -0.35em;
+  }
 
 /* Classes
   =========================================================================== */
