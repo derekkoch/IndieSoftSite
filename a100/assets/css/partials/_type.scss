@@ -57,9 +57,37 @@
 /* Sections
   =========================================================================== */
 
-  #program {
+  #footer,
+  #testimonials,
+  #program,
+  #curriculum,
+  #team {
     h2 { @include headline-light; }
+    h4 { @include subheader-light; }
     p { @include light; }
+  }
+
+  #footer,
+  #media,
+  #tuition,
+  #contact,
+  #companies,
+  #mvs,
+  #meteor-partner,
+  #technologies,
+  #samples,
+  #applicants {
+    h2 { @include headline-dark; }
+    h4 { @include subheader-dark; }
+    ul > li { @include dark; }
+    p { @include dark; }
+  }
+
+/* Responsive
+  =========================================================================== */
+
+  @media (max-width: 62em) {
+    #samples { text-align: center !important; }
   }
 //
 //   .title { @extend .light; }
