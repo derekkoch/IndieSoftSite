@@ -44,6 +44,7 @@
     @include section-padding;
   }
 
+  #media,
   #contact,
   #mvs {
     background: $light-gray-bg;
@@ -52,7 +53,6 @@
 
   #testimonials,
   #team,
-  #media,
   #program,
   #curriculum {
     background: $blue-bg;
