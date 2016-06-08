@@ -1,19 +1,19 @@
 // compileOnSave
 
-@import "vendor/normalize";
+@import "scss/vendor/normalize";
 
-@import "vendor/bootstrap/variables";
-@import "vendor/bootstrap/utilities-spacing";
-@import "vendor/bootstrap/utilities-responsive";
+@import "scss/vendor/bootstrap/variables";
+@import "scss/vendor/bootstrap/utilities-spacing";
+@import "scss/vendor/bootstrap/utilities-responsive";
 
-@import "partials/mixins";
-@import "partials/base";
-@import "partials/type";
-@import "partials/icons";
-@import "partials/images";
+@import "scss/partials/mixins";
+@import "scss/partials/base";
+@import "scss/partials/type";
+@import "scss/partials/icons";
+@import "scss/partials/images";
 
-@import "modules/global";
-@import "modules/hero";
+@import "scss/modules/global";
+@import "scss/modules/hero";
 
 /* ====== Global ====== */
 

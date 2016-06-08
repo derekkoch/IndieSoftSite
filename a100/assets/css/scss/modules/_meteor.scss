@@ -1,0 +1,23 @@
+
+#meteor {
+
+  /* Box Model
+    ========================================================================= */
+
+    @include section-padding(4rem);
+
+  /* Typography
+    ========================================================================= */
+
+    h2  { @include headline-dark; }
+    h4  { @include subheader-dark; }
+    p   { @include dark; }
+
+    ul > li { @include dark; }
+
+  /* Visual
+    ========================================================================= */
+
+    background: white;
+    img { @include img(175px); }
+}
