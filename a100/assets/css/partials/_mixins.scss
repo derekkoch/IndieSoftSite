@@ -1,0 +1,35 @@
+
+/* Box Model
+  =========================================================================== */
+
+  @mixin section-padding($padding) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+
+
+/* Typography
+  =========================================================================== */
+
+  @mixin text($color, $weight) {
+    color: $color;
+    font-weight: $weight;
+  }
+
+  @mixin headline-light { @include text($text-light, 300); }
+  @mixin headline-dark { @include text($text-dark, 300); }
+
+  @mixin subheader-light { @include text($text-light, 700); }
+  @mixin subheader-dark { @include text($text-dark, 700); }
+
+  @mixin light { @include text($text-light, 200); }
+  @mixin dark { @include text($text-dark, 300); }
+
+
+/* Visual
+  =========================================================================== */
+
+  @mixin img($width) {
+    width: $width;
+    height: auto;
+  }

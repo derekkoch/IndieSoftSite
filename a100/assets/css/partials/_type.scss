@@ -4,23 +4,6 @@
 
   @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
-/* Mixins
-  =========================================================================== */
-
-  @mixin text($color, $weight) {
-    color: $color;
-    font-weight: $weight;
-  }
-
-  @mixin headline-light { @include text($text-light, 300); }
-  @mixin headline-dark { @include text($text-dark, 300); }
-
-  @mixin subheader-light { @include text($text-light, 700); }
-  @mixin subheader-dark { @include text($text-dark, 700); }
-
-  @mixin light { @include text($text-light, 200); }
-  @mixin dark { @include text($text-dark, 300); }
-
 /* Element Rules
   =========================================================================== */
 
