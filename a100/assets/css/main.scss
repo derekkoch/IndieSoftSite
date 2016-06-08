@@ -24,14 +24,14 @@
   #tuition,
   #technologies {
     background: white;
-    @include section-padding;
+    @include section-padding(4rem);
   }
 
   #media,
   #contact,
   #mvs {
     background: $light-gray-bg;
-    @include section-padding;
+    @include section-padding(4rem);
   }
 
   #testimonials,
@@ -39,12 +39,12 @@
   #program,
   #curriculum {
     background: $blue-bg;
-    @include section-padding;
+    @include section-padding(4rem);
   }
 
   #footer {
     background: $dark-gray;
-    @include section-padding;
+    @include section-padding(4rem);
   }
 
   @media (max-width: $lg) {
