@@ -230,18 +230,3 @@
           color: white !important;
       }
     }
-
-    .hero-btn-sm {
-      @include hero-btn;
-      font-size: .85rem;
-    }
-
-    .hero-btn {
-      @include hero-btn;
-
-      @media #{$smd} {
-        font-size: .85rem;
-      }
-
-      font-size: .92rem;
-    }

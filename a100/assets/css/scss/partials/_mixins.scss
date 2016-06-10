@@ -158,3 +158,23 @@
     width: $width;
     height: auto;
   }
+
+  // Buttons
+  @mixin outline-button($btn-color) {
+
+    // Box Model
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    border-radius: 3px;
+    border: solid 2px $btn-color;
+
+    // Typography
+    font-size: .95rem;
+    font-weight: 600;
+    color: $btn-color;
+
+    &:hover {
+      color: white;
+      background: linear-gradient(to bottom, $btn-color, darken($btn-color, 3%)) !important;
+    }
+  }
