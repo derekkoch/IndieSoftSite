@@ -1,0 +1,30 @@
+
+#senior-apprentice {
+
+  /* Box Model
+    ========================================================================= */
+
+   /* Padding */
+   @include section-padding(4rem);
+
+  /* Typography
+    ========================================================================= */
+
+    h2 { @include headline-light; }
+    h4 { @include subheader-light; }
+    p  { @include light; }
+
+  /* Visual
+    ========================================================================= */
+
+    background: $blue-bg;
+
+    /* Buttons */
+    a {
+      @include outline-button(white);
+
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+}
