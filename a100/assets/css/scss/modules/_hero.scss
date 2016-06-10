@@ -172,48 +172,9 @@
 
 /* ====== Buttons ====== */
 
-  /*== Mixins ==*/
-    @mixin button-outline-variant($color) {
-      color: lighten($color, 8%);
-      background-image: none;
-      background-color: transparent;
-      border-color: lighten($color, 8%);
-
-      &:focus,
-      &.focus,
-      &:active,
-      &.active,
-      .open > &.dropdown-toggle {
-        color: #fff;
-        background-color: lighten($color, 8%);
-            border-color: lighten($color, 8%);
-      }
-
-      &:hover {
-        color: #fff;
-        background-color: lighten($color, 8%);
-        border-color: lighten($color, 8%);
-      }
-
-      &.disabled,
-      &:disabled,
-      fieldset[disabled] & {
-        &:focus,
-        &.focus {
-          border-color: lighten($color, 20%);
-        }
-        &:hover {
-          border-color: lighten($color, 20%);
-        }
-      }
-    }
-
-    @mixin hero-btn {
-      @include button-outline-variant($dark-blue);
-      border-radius: 0px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
+  .hero-btn {
+    @include outline-button($dark-green);
+  }
 
   /*== Classes ==*/
     .access-button {
