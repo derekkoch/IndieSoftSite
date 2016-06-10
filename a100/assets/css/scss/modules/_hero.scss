@@ -176,18 +176,16 @@
     @include outline-button($dark-green);
   }
 
-  /*== Classes ==*/
     .access-button {
-      border-radius: 0px !important;
-      border-color: $light-blue !important;
-      color: $light-blue !important;
-      text-decoration: none !important;
-      font-weight: 600 !important;
-      font-size: .70rem !important;
+      border-radius: 3px;
+      color: $light-blue;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .95rem !important;
       letter-spacing: .05em !important;
 
       &:hover {
-          background: $light-blue;
-          color: white !important;
+          color: white;
+          background: linear-gradient(to bottom, $light-blue, darken($light-blue, 3%)) !important;
       }
     }
