@@ -1,11 +1,19 @@
 
 #meteor-partner {
 
+  /* Background
+    ========================================================================= */
+
+    background: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url('/assets/img/meteor-bg.svg');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
   /* Box Model
     ========================================================================= */
 
    /* Padding */
-   @include section-padding(3rem);
+   @include section-padding(4rem);
 
   /* Typography
     ========================================================================= */
@@ -17,8 +25,5 @@
   /* Visual
     ========================================================================= */
 
-    background: white;
-
     img { @include img(185px); }
-
 }
