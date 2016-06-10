@@ -1,0 +1,24 @@
+
+#meteor-partner {
+
+  /* Box Model
+    ========================================================================= */
+
+   /* Padding */
+   @include section-padding(3rem);
+
+  /* Typography
+    ========================================================================= */
+
+    h2 { @include headline-dark; }
+    h4 { @include subheader-dark; }
+    p  { @include dark; }
+
+  /* Visual
+    ========================================================================= */
+
+    background: white;
+
+    img { @include img(185px); }
+
+}
