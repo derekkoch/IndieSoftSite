@@ -23,6 +23,19 @@
     border: none;
   }
 
+/* Positioning
+  =========================================================================== */
+
+  .v-a-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .h-a-center {
+    display: flex;
+    justify-content: center;
+  }
 
 /* Typography
   =========================================================================== */
