@@ -1,0 +1,38 @@
+
+#applicants {
+
+  /* Box Model
+    ========================================================================= */
+
+    /* Padding */
+    @include section-padding(4rem);
+
+  /* Typography
+    ========================================================================= */
+
+    h2 { @include headline-dark; }
+    h4 { @include subheader-dark; }
+    p { @include dark; }
+
+    @media (max-width: 991px) {
+      #applicant-prereqs,
+      #applicant-traits {
+        h2, h4, p {
+          text-align: center;
+        }
+      }
+    }
+
+  /* Visual
+    ========================================================================= */
+
+    /* Background */
+    background: white;
+
+    /* Buttons, Links */
+    a {
+      @include outline-button($dark-green, white);
+      @include fade;
+    }
+
+}
