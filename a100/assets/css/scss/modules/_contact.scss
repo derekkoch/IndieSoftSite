@@ -1,0 +1,39 @@
+
+#contact {
+
+  /* Background
+    ========================================================================= */
+
+    background: $light-gray-bg;
+
+  /* Box Model
+    ========================================================================= */
+
+    /* Padding */
+    @include section-padding(4rem);
+
+  /* Typography
+    ========================================================================= */
+
+    h2 { @include headline-dark; }
+    h4 { @include subheader-dark; }
+    p { @include dark; }
+
+  /* Visual
+    ========================================================================= */
+
+    iframe {
+      frameborder: 0;
+      border: 0;
+      width: 425px;
+      height: 350px;
+    }
+
+    i {
+      @include icon-fade($social-media-blue);
+      font-size: 25px;
+      color: #888d90;
+      text-align: left;
+    }
+
+}

@@ -17,6 +17,7 @@
 @import "scss/modules/hero";
 @import "scss/modules/meteor-partner";
 @import "scss/modules/senior-apprentice";
+@import "scss/modules/contact";
 @import "scss/modules/footer";
 
 /* ====== Global ====== */
@@ -31,7 +32,6 @@
   }
 
   #media,
-  #contact,
   #mvs {
     background: $light-gray-bg;
     @include section-padding(4rem);
@@ -43,19 +43,6 @@
   #curriculum {
     background: $blue-bg;
     @include section-padding(4rem);
-  }
-
-  #footer {
-    background: $dark-gray;
-    @include section-padding(4rem);
-  }
-
-  @media (max-width: $lg) {
-
-    #contact,
-    #footer {
-        text-align: center;
-    }
   }
 
 /* ========================================================================== */
