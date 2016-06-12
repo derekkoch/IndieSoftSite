@@ -160,21 +160,36 @@
   }
 
   // Buttons
-  @mixin outline-button($btn-color) {
+  @mixin outline-button($btn-color, $text-color, $size: 'large') {
 
-    // Box Model
-    padding-top: .8rem;
-    padding-bottom: .8rem;
+    // Padding
+    @if $size == 'small' {
+      padding-top: .2rem;
+      padding-bottom: .2rem;
+    } @else {
+      padding-top: .8rem;
+      padding-bottom: .8rem;
+    }
+
+    // Border
     border-radius: 3px;
     border: solid 2px $btn-color;
 
     // Typography
-    font-size: .95rem;
+    @if $size == 'small' {
+      font-size: .8rem !important;
+      letter-spacing: .05em !important;
+    } @else {
+      font-size: .95rem;
+    }
+
     font-weight: 600;
     color: $btn-color;
 
+    &:focus,
+    &:active,
     &:hover {
-      color: white;
+      color: $text-color;
       background: linear-gradient(to bottom, $btn-color, darken($btn-color, 3%)) !important;
     }
   }
