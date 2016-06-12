@@ -21,10 +21,7 @@
 
     /* Buttons */
     a {
-      @include outline-button(white);
-
-      &:hover {
-        color: $dark-blue;
-      }
+      @include outline-button(white, $dark-blue);
+      @include fade;
     }
 }
