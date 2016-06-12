@@ -1,0 +1,43 @@
+
+@import "hover-options";
+@import "hover-hacks";
+@import "hover-mixins";
+
+
+/* Fade
+  =========================================================================== */
+
+  /* Background Fade */
+  @mixin fade {
+    @include hacks();
+    overflow: hidden;
+    @include prefixed(transition-duration, $mediumDuration);
+    @include prefixed(transition-property, "color, background-color");
+
+  }
+
+  /* Icon Fade */
+  @mixin icon-fade($active-color) {
+    @include hacks();
+    position: relative;
+    padding-right: #{$spaceBetweenTextAndArrows};
+
+    &:before {
+      position: absolute;
+      right: 1em;
+      padding: 0 1px;
+      font-family: FontAwesome;
+      @include prefixed(transform, translateZ(0));
+      @include prefixed(transition-duration, $mediumDuration);
+      @include prefixed(transition-property, color);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      &:before {
+        color: $active-color;
+      }
+    }
+  }
