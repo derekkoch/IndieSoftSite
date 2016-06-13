@@ -1,0 +1,29 @@
+
+#mvs {
+
+  /* Visual
+    ========================================================================= */
+
+    /* Background */
+    background: $light-gray-bg;
+
+  /* Box Model
+    ========================================================================= */
+
+    /* Padding */
+    @include section-padding(4rem);
+
+  /* Typography
+    ========================================================================= */
+
+    h2 { @include headline-dark; }
+    h4 { @include subheader-dark; }
+    p { @include dark; }
+
+    sup {
+      vertical-align: super;
+      font-size: .85rem;
+      left: -0.35em;
+    }
+
+}

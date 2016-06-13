@@ -4,15 +4,6 @@
 
   @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
-/* Element Rules
-  =========================================================================== */
-
-  sup {
-    vertical-align: super;
-    font-size: .85rem;
-    left: -0.35em;
-  }
-
 /* Classes
   =========================================================================== */
 
@@ -50,7 +41,6 @@
   #media,
   #tuition,
   #companies,
-  #mvs,
   #technologies {
     h2 { @include headline-dark; }
     h4 { @include subheader-dark; }

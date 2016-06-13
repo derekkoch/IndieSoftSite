@@ -16,6 +16,7 @@
 @import "scss/modules/hero";
 @import "scss/modules/program";
 @import "scss/modules/meteor-partner";
+@import "scss/modules/mvs";
 @import "scss/modules/curriculum";
 @import "scss/modules/meetup";
 @import "scss/modules/samples";
@@ -33,8 +34,7 @@
     @include section-padding(4rem);
   }
 
-  #media,
-  #mvs {
+  #media {
     background: $light-gray-bg;
     @include section-padding(4rem);
   }
