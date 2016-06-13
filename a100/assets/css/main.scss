@@ -16,6 +16,7 @@
 @import "scss/modules/hero";
 @import "scss/modules/program";
 @import "scss/modules/meteor-partner";
+@import "scss/modules/curriculum";
 @import "scss/modules/meetup";
 @import "scss/modules/samples";
 @import "scss/modules/applicants";
@@ -39,8 +40,7 @@
   }
 
   #testimonials,
-  #team,
-  #curriculum {
+  #team {
     background: $blue-bg;
     @include section-padding(4rem);
   }
