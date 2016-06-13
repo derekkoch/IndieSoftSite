@@ -15,6 +15,7 @@
 @import "scss/modules/global";
 @import "scss/modules/hero";
 @import "scss/modules/program";
+@import "scss/modules/testimonials";
 @import "scss/modules/meteor-partner";
 @import "scss/modules/media";
 @import "scss/modules/mvs";
@@ -33,7 +34,6 @@
     @include section-padding(4rem);
   }
 
-  #testimonials,
   #team {
     background: $blue-bg;
     @include section-padding(4rem);
