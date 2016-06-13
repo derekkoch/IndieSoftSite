@@ -18,25 +18,13 @@
 @import "scss/modules/testimonials";
 @import "scss/modules/meteor-partner";
 @import "scss/modules/media";
+@import "scss/modules/companies";
 @import "scss/modules/mvs";
 @import "scss/modules/curriculum";
 @import "scss/modules/meetup";
 @import "scss/modules/samples";
+@import "scss/modules/team";
 @import "scss/modules/applicants";
 @import "scss/modules/senior-apprentice";
 @import "scss/modules/contact";
 @import "scss/modules/footer";
-
-/* ====== Global ====== */
-
-  #companies {
-    background: white;
-    @include section-padding(4rem);
-  }
-
-  #team {
-    background: $blue-bg;
-    @include section-padding(4rem);
-  }
-
-/* ========================================================================== */

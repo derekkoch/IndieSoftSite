@@ -17,38 +17,8 @@
       font-style: italic;
     }
 
-    .team-name {
-      @extend .light;
-      font-size: 1.2rem;
-    }
-
     .team-title {
       @include light;
       font-size: .9rem;
       font-style: italic;
     }
-
-/* Sections
-  =========================================================================== */
-
-  #team {
-    h2 { @include headline-light; }
-    h4 { @include subheader-light; }
-    p { @include light; }
-  }
-
-  #companies {
-    h2 { @include headline-dark; }
-    h4 { @include subheader-dark; }
-    ul > li { @include dark; }
-    p { @include dark; }
-  }
-
-/* Responsive
-  =========================================================================== */
-
-  @media (max-width: 62em) {
-    #samples { text-align: center !important; }
-  }
-//
-//   .title { @extend .light; }

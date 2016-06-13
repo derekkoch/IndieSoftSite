@@ -1,24 +1,11 @@
 
 
-  #team {
-    img {
-      width: 175px;
-      height: auto;
-    }
-  }
-
 .img-circle { border-radius: 50%; }
 
 .img-fluid {
   display: block;
   max-width: 100%;  // Set a maximum width relative to the parent
   height: auto;   // Scale the height according to the width to avoid stretching
-}
-
-.techLogo {
-  width: 120px;
-  height: auto;
-  padding: 5px;
 }
 
 .vcenter {
