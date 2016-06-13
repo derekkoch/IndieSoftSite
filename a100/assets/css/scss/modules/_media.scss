@@ -1,0 +1,26 @@
+
+#media {
+
+  /* Visual
+    ========================================================================= */
+
+    /* Background */
+    background: $light-gray-bg;
+
+    /* Images */
+    img { height: 40px; }
+
+  /* Box Model
+    ========================================================================= */
+
+    /* Padding */
+    @include section-padding(4rem);
+
+  /* Typography
+    ========================================================================= */
+
+    h2 { @include headline-dark; }
+    h4 { @include subheader-dark; }
+    p { @include dark; }
+
+}

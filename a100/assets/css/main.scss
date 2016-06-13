@@ -16,6 +16,7 @@
 @import "scss/modules/hero";
 @import "scss/modules/program";
 @import "scss/modules/meteor-partner";
+@import "scss/modules/media";
 @import "scss/modules/mvs";
 @import "scss/modules/curriculum";
 @import "scss/modules/meetup";
@@ -31,11 +32,6 @@
   #tuition,
   #technologies {
     background: white;
-    @include section-padding(4rem);
-  }
-
-  #media {
-    background: $light-gray-bg;
     @include section-padding(4rem);
   }
 
