@@ -17,6 +17,7 @@
 @import "scss/modules/program";
 @import "scss/modules/meteor-partner";
 @import "scss/modules/meetup";
+@import "scss/modules/samples";
 @import "scss/modules/applicants";
 @import "scss/modules/senior-apprentice";
 @import "scss/modules/contact";
@@ -25,7 +26,6 @@
 /* ====== Global ====== */
 
   #companies,
-  #samples,
   #tuition,
   #technologies {
     background: white;
