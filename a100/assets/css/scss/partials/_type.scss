@@ -22,7 +22,7 @@
   }
     .emphasis {
       @include text($text-light, 200);
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-style: italic;
     }
 
