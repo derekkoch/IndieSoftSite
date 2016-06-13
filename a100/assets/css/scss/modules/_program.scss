@@ -1,0 +1,22 @@
+
+#program {
+
+  /* Box Model
+    ========================================================================= */
+
+    /* Padding */
+    @include section-padding(4rem);
+
+  /* Typography
+    ========================================================================= */
+
+    h2 { @include headline-light; }
+    h4 { @include subheader-light; }
+    p  { @include light; }
+
+  /* Visual
+    ========================================================================= */
+
+    /* Background */
+    background: $blue-bg;
+}
