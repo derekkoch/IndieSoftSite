@@ -38,8 +38,7 @@
     p { @include light; }
   }
 
-  #companies,
-  #technologies {
+  #companies {
     h2 { @include headline-dark; }
     h4 { @include subheader-dark; }
     ul > li { @include dark; }

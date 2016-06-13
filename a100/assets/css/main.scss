@@ -28,8 +28,7 @@
 
 /* ====== Global ====== */
 
-  #companies,
-  #technologies {
+  #companies {
     background: white;
     @include section-padding(4rem);
   }
