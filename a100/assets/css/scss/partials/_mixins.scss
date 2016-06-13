@@ -162,34 +162,48 @@
   // Buttons
   @mixin outline-button($btn-color, $text-color, $size: 'large') {
 
-    // Padding
-    @if $size == 'small' {
-      padding-top: .2rem;
-      padding-bottom: .2rem;
-    } @else {
-      padding-top: .8rem;
-      padding-bottom: .8rem;
-    }
+    /* Box Model
+      ======================================================================= */
 
-    // Border
-    border-radius: 3px;
-    border: solid 2px $btn-color;
+      // Padding
+      @if $size == 'xs' {
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+      } @else if $size == 'sm' {
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+      } @else {
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+      }
 
-    // Typography
-    @if $size == 'small' {
-      font-size: .8rem !important;
-      letter-spacing: .05em !important;
-    } @else {
-      font-size: .95rem;
-    }
+      // Border
+      border-radius: 3px;
+      border: solid 2px $btn-color;
 
-    font-weight: 600;
-    color: $btn-color;
+      @if $size == 'sm' {
+        min-width: 185px;
+      }
 
-    &:focus,
-    &:active,
-    &:hover {
-      color: $text-color;
-      background: linear-gradient(to bottom, $btn-color, darken($btn-color, 3%)) !important;
-    }
+    /* Typography
+      ======================================================================= */
+
+      @if $size == 'xs' {
+        font-size: .8rem !important;
+        letter-spacing: .05em !important;
+      } @else if $size == 'sm' {
+        font-size: .9rem;
+      } @else {
+        font-size: .95rem;
+      }
+
+      font-weight: 600;
+      color: $btn-color;
+
+      &:focus,
+      &:active,
+      &:hover {
+        color: $text-color;
+        background: linear-gradient(to bottom, $btn-color, darken($btn-color, 3%)) !important;
+      }
   }
